@@ -1,5 +1,12 @@
-language : java
-install :
+language: java
+install:
 - mvn install
 jdk:
 - oraclejdk8
+deploy:
+  provider: heroku
+  api_key:
+    secure: Nxjr7OpgEuApkvczm12u0C/9Y3YRNAcBQqPbtnuwSDXCCuPlyk5gWkTyUclHeuP67YmiUNFBxs+/tHiKrcNHQhGZYTnAczJHtxqZkjkUFR4V8jKxWD+fRopirs9f5u4MxSXo8KI22W/ElSUb+ghEMT/VJP1vaeQ5DFO0kYRD5E8jHMXEL9ufJnLiB8j/UkdPasHipPnQYcNl9VNK6Leuv7AFu1pu1C76h4wNbvXKPiQB2jHEMtA38baU/DOoPyiUgUpoh82MmDKVxz5v/+N3Fq/DNEn8FhjXkyjesG4g5jC1GX9VDkx84hGKRcKWK/F1hxhYfF3bRZ2YJSiY8riKoMwr40U1neGZlEJgCdc0HoLFoRvwW/SJLtYGc+hhcEWxwVjXu/Ol+d5LXjQFe/+CMkN7s4Ds7IbSho2nCcs2mF8FM0TuGcGXgmzjZoB1fidXERvWfS/tW6u2pr+rZC0/ZQS3ajXlmRkOZLe3irXUub5tEySLXG0/9cP1bMgtCSbWefWMx/KmJAsLEBVOuLp/YCXzvA9MlZGBiNHTNTFgyRQXFKp3x5w7cE/FeY8p4+fd9DJHp/0iCbWUHXaL1fL/MX2x18CHAEKoxZLqk5b23jZLuyDva02nJ4SPBICVaTAqPaZriVnMcIkWuM+2/OWfUxFpOOc5JtqsDHiRGxHsvcI=
+  app: starlai21/addressbook
+  on:
+    repo: starlai21/addressbook
